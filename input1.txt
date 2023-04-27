@@ -1,0 +1,73 @@
+Java – bendrosios paskirties, objektiškai orientuota programavimo kalba, kurią 1991 m. sukūrė Džeimsas Goslingas ir kiti „Sun Microsystems“ inžinieriai, o 2010 m. ją įsigijo Oracle korporacija.
+
+Apie Javą oficialiai paskelbta 1995 metų gegužės 23 d., o išleista tų pačių metų lapkritį. Java (pradžioje vadinta Oak) kalbos pirminis tikslas buvo pakeisti C++ kalbą.
+
+Javos aplikacijos yra kompiliuojamos į baitkodą, kuris gali būti paleidžiamas bet kokioje Javos virtualiojoje mašinoje (JVM), nepriklausomai nuo kompiuterio architektūros.
+
+2015 m. Java yra viena iš populiariausių naudojamų programavimo kalbų,[1][2][3][4] ypač kliento-serverio „web aplikacijose“. Ja taip pat rašomos programos Android išmaniesiems telefonams.
+Paskirtis
+
+Kuriant Java, pagrindiniai tikslai buvo šie:
+
+    Kalba turi būti objektiškai orientuota.
+    Kalba turi būti nepriklausoma nuo naudojamos platformos (beveik nepriklausoma).
+    Savyje kalba turi turėti priemones ir bibliotekas komunikacijai tinklu.
+    Kalba turi būti suprojektuota taip, kad kodas iš nutolusio šaltinio būtų vykdomas saugiai.
+
+Struktūra
+
+Java platforma yra sudaryta iš trijų pagrindinių dalių:
+
+    J2SE – Java 2 Platform, Standard Edition. Tai Javos širdis, šioje platformoje yra pateikiamos visos bazinės bibliotekos ir įrankiai, kurie naudojami komandinės eilutės ir grafinę sąsają turinčioms programoms (pvz., naudojančioms Swing karkasą) kurti. Net ir ši paprasčiausia dalis jau visiškai palaiko CORBA.
+    J2EE – Java 2 Platform, Enterprise Edition. Ši dalis skirta kurti informacines verslo sistemas. Tiesiog J2SE yra papildoma įvairiomis technologijomis, suteikiančiomis galimybę kurti Web programas (Java Servlet, JavaServer Pages, JavaServer Faces ir t. t.), išskirstytas sistemas, apibrėžia daugkartinio panaudojimo komponentus (Enterprise JavaBeans), pateikia šūsnį standartų ir t. t.
+    J2ME – Java 2 Platform, Micro Edition. Tai platforma, kuri pateikia įrankių rinkinį kurti programas tokiems mobiliems įrenginiams, kaip mobiliesiems telefonams, delniniams kompiuteriams ir t. t.
+
+Pavyzdys
+
+Java kalba parašytos programos, į ekraną išvedančios tekstą „Sveikas, pasauli!“, pavyzdys:
+
+public class SveikasPasauli {
+
+	public static void main(String[] args) {
+		System.out.println("Sveikas, pasauli!");
+	}
+
+}
+
+Kalbos ypatybės
+
+Java programavimo sistemoje programuotojo parašytas kodas kompiliuojamas ne į procesoriui specifinę, o į tarpinę formą. Ši tarpinė forma nepriklauso nuo procesoriaus tipo ar operacinės sistemos, todėl iškart tinka vykdyti įvairiose aplinkose. Pirmosiose Java versijose tarpinis kodas buvo interpretuojamas, todėl Java pelnė lėtai dirbančios platformos reputaciją. Dabartinės sistemos tarpinį kodą paprastai prieš vykdydamos kompiliuoja (just in time compiling), todėl vykdymo greitis panašus ar tik nežymiai mažesnis. Java turi „natyvią sąsąją“, kurios pagalba nesunku ją jungti ir su esančiomis C, C++ ar FORTRAN bibliotekomis. Dažniausiai to prireikia jei būtina naudoti šiomis kalbomis parašytas matematines ar kitokias bibliotekas.
+
+Masyvo rėžių tikrinimas Java programuotojams padeda išvengti sunkiai aptinkamų programavimo klaidų, sukeliančių atidėtą katastrofą.
+
+Svarbi Java sistemos dalis yra šiukšlių surinktuvas. C ar C++ programuotojas turi rašyti kodą, kuris atėjus laikui „naikina“ nebereikalingas duomenų struktūras, išlaisvindamas jų užimamą atmintį. Klaidos neretai „pakabindavo“ programą, o senesniais laikais paprastai ir visą operacinę sistemą. Java šiukšlių surinkėjas pats nustato, jog struktūra nebenaudojama ir jos užimama atmintis gali būti panaudota kam kitam.
+
+Įvairios Java programos dalys nesunkiai gali būti vykdomos lygiagrečiai (multithreading).
+
+Java taip pat turi gerai išvystytą refleksijos sistemą.
+
+Pradedant naujesne 1.5 versija, Java kalba taip pat palaiko „bendrybes“ (angl. generics), kurios primena aiškesnį, paprastesnį praeityje kai kuriose kalbose buvusių makrokomandų variantą. Nuo 1.6 versijos java palaiko skriptus – galimybę vykdyti simbolių eilutės kintamajame esantį kitos programos tekstą, jam keičiantis duomenimis su gaubiančiąja programa.
+
+Šiuo metu esama tiek komercinių, tiek ir atviro kodo (GNU Classpath, Apache Harmony) Java programų vykdymo sistemų. Java sukūrusi Sun Microsystems 2006 m. lapkričio mėnesį paskelbė, jog per keletą metų palaipsniui pereina prie atviro kodo modelio, pateikiant visas Java programai vykdyti reikalingas dalis su GPL licencija, papildyta sujungimo išimtimi.
+Google
+
+Google ir Android, Inc. pasirinko Java kalbą kuriant Android operacinę sistemą. Nors ir Android, veikianti Linux branduolio pagrindu, parašyta C kalba, Android SDK naudoja Java kaip Android aplikacijų pamatą. Tačiau tik sintaksei, o ne klasių bibliotekoms.
+Šaltiniai
+
+McMillan, Robert (2013-08-01). „Is Java Losing Its Mojo?“. wired.com. „Java is on the wane, at least according to one outfit that keeps on eye on the ever-changing world of computer programming languages. For more than a decade, it has dominated the Tiobe Programming Community Index — a snapshot of software developer enthusiasm that looks at things like internet search results to measure how much buzz different languages have. But lately, Java has been slipping.“
+RedMonk Index on redmonk.com (Stephen O’Grady, January 2015)
+„Programming Language Popularity“. langpop.com. 2013-10-25. Suarchyvuotas originalas 2009-01-16. Nuoroda tikrinta 2015-04-02. „Normalized Comparison: 1st C, 2nd Java, 3rd PHP“
+
+    „TIOBE Programming Community Index“. 2015. Suarchyvuotas originalas 2013-07-02. Nuoroda tikrinta 2015-04-03.
+
+Nuorodos
+
+Susiję straipsniai:
+
+    Programavimo kalbos
+
+Kiti šaltiniai:
+
+    J2SE v. 1.4.2 dokumentacija
+    Java platformos puslapis, palaikomas Sun korporacijos
+    Java platformos puslapis, palaikomas Free Software Foundation (atviras kodas)

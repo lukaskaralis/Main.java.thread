@@ -1,0 +1,8 @@
+In the first file we found 27 words 'Java'
+---------------------------------------------------------
+In the third file we found 13 words 'Java'
+---------------------------------------------------------
+In the fourth file we found 13 words 'Java'
+---------------------------------------------------------
+In the second file we found 36 words 'Java'
+---------------------------------------------------------
